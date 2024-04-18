@@ -55,7 +55,7 @@ namespace WinFormsAppCourse2024
             {
 
                 rsa.ImportParameters(publicKey);
-                return rsa.Encrypt(dataToEncrypt, true);
+                return rsa.Encrypt(dataToEncrypt, false);
             }
         }
 

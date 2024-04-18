@@ -31,6 +31,8 @@
             buttonPWR = new Button();
             buttonDH = new Button();
             buttonRSA = new Button();
+            buttonHash = new Button();
+            buttonDES = new Button();
             SuspendLayout();
             // 
             // buttonPWR
@@ -63,11 +65,33 @@
             buttonRSA.UseVisualStyleBackColor = true;
             buttonRSA.Click += buttonRSA_Click;
             // 
+            // buttonHash
+            // 
+            buttonHash.Location = new Point(27, 163);
+            buttonHash.Name = "buttonHash";
+            buttonHash.Size = new Size(105, 75);
+            buttonHash.TabIndex = 3;
+            buttonHash.Text = "Hash";
+            buttonHash.UseVisualStyleBackColor = true;
+            buttonHash.Click += buttonHash_Click;
+            // 
+            // buttonDES
+            // 
+            buttonDES.Location = new Point(165, 163);
+            buttonDES.Name = "buttonDES";
+            buttonDES.Size = new Size(105, 75);
+            buttonDES.TabIndex = 4;
+            buttonDES.Text = "DES";
+            buttonDES.UseVisualStyleBackColor = true;
+            buttonDES.Click += buttonDES_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonDES);
+            Controls.Add(buttonHash);
             Controls.Add(buttonRSA);
             Controls.Add(buttonDH);
             Controls.Add(buttonPWR);
@@ -81,5 +105,7 @@
         private Button buttonPWR;
         private Button buttonDH;
         private Button buttonRSA;
+        private Button buttonHash;
+        private Button buttonDES;
     }
 }

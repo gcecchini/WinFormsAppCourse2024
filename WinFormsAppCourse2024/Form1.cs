@@ -24,5 +24,17 @@ namespace WinFormsAppCourse2024
             FormRSA frm = new FormRSA();
             frm.ShowDialog();
         }
+
+        private void buttonHash_Click(object sender, EventArgs e)
+        {
+            FormHash frm = new FormHash();
+            frm.ShowDialog();
+        }
+
+        private void buttonDES_Click(object sender, EventArgs e)
+        {
+            FormDES frm = new FormDES();   
+            frm.ShowDialog();   
+        }
     }
 }
